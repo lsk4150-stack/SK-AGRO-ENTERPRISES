@@ -1,0 +1,217 @@
+/* ==========================
+   SK Agro Enterprise
+   style.css
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8f9fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#198754 !important;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    color:#fff !important;
+    font-size:17px;
+    margin-left:15px;
+}
+
+.nav-link:hover{
+    color:#ffd54f !important;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../images/banner.jpg");
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:24px;
+    margin:20px 0;
+}
+
+.hero .btn{
+    padding:12px 35px;
+    font-size:20px;
+    border-radius:30px;
+}
+
+/* Section */
+
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:38px;
+    font-weight:bold;
+    color:#198754;
+    margin-bottom:40px;
+}
+
+/* About */
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+    text-align:center;
+}
+
+/* Product Card */
+
+.card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.card-body{
+    text-align:center;
+}
+
+.card-title{
+    color:#198754;
+    font-weight:bold;
+}
+
+/* Agriculture Service */
+
+.service-box{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.service-box:hover{
+    background:#198754;
+    color:#fff;
+}
+
+/* Contact */
+
+form input,
+form textarea{
+    margin-bottom:15px;
+    border-radius:8px;
+}
+
+.btn-success{
+    padding:10px 30px;
+    border-radius:30px;
+}
+
+/* Footer */
+
+footer{
+    background:#198754;
+    color:#fff;
+    padding:25px;
+    text-align:center;
+}
+
+footer h5{
+    margin-bottom:10px;
+}
+
+/* WhatsApp Button */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.whatsapp:hover{
+    background:#128C7E;
+    color:#fff;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+    height:70vh;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.section-title{
+    font-size:28px;
+}
+
+.navbar-brand{
+    font-size:22px;
+}
+
+.card img{
+    height:180px;
+}
+
+}
